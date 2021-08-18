@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--PWA-->
+    <meta name="theme-color" content="#333333">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandhldFriendly" content="true">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+
+    <!--icons-->
+    <link rel="shortcut icon" href="./icono.png" type="image/png">
+    <link rel="apple-touch-icon" href="./icono.png" type="image/png">
+    <link rel="apple-touch-startup-image" href="./icono.png" type="image/png">
+    <!----------->
+
+    <!--manifest-->
+    <link rel="manifest" href="./manifest.json">
+    <!---->
+
+
+    <!----------------------------->
+    <title>CDN</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="root">
+
+    </div>
+    <script type="text/babel">
+
+        /*class Saludo extends React.Component {
+            render(){
+                return(
+                    <h1>saludo</h1>
+                )
+            }
+        }
+        const Interpolar = () =>{
+            const [numero, SetNumero] =React.useState(0)
+            setInterval(()=>{
+                SetNumero(numero)
+            },2000)
+            return (
+                <div>
+                    <h1>{numero}</h1>    
+                </div>
+            )
+        }
+        ReactDOM.render(
+            //React.createElement("div",null,"Hola Mundo")
+            //<div>
+                //<h1>Algo</h1>
+            //</div>
+            <Interpolar/>
+            ,document.getElementById("root")
+        )*/
+    </script>
+
+<script type="text/babel" src="./components/Contador.js"></script>
+<script type="text/babel" src="./index.js"></script>
+
+<script src="./register.js" ></script>
+
+</body>
+</html>
